@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ibsf/static/css/main.5477b422.chunk.css",
-    "main.js": "/ibsf/static/js/main.6c0e06c0.chunk.js",
-    "main.js.map": "/ibsf/static/js/main.6c0e06c0.chunk.js.map",
-    "runtime-main.js": "/ibsf/static/js/runtime-main.6e474bfe.js",
-    "runtime-main.js.map": "/ibsf/static/js/runtime-main.6e474bfe.js.map",
+    "main.css": "/ibsf/static/css/main.74e4067a.chunk.css",
+    "main.js": "/ibsf/static/js/main.98d184f5.chunk.js",
+    "main.js.map": "/ibsf/static/js/main.98d184f5.chunk.js.map",
+    "runtime-main.js": "/ibsf/static/js/runtime-main.406542e5.js",
+    "runtime-main.js.map": "/ibsf/static/js/runtime-main.406542e5.js.map",
     "static/css/2.782f2948.chunk.css": "/ibsf/static/css/2.782f2948.chunk.css",
-    "static/js/2.0fba0925.chunk.js": "/ibsf/static/js/2.0fba0925.chunk.js",
-    "static/js/2.0fba0925.chunk.js.map": "/ibsf/static/js/2.0fba0925.chunk.js.map",
-    "static/js/3.10e7e23b.chunk.js": "/ibsf/static/js/3.10e7e23b.chunk.js",
-    "static/js/3.10e7e23b.chunk.js.map": "/ibsf/static/js/3.10e7e23b.chunk.js.map",
+    "static/js/2.2a77f6b8.chunk.js": "/ibsf/static/js/2.2a77f6b8.chunk.js",
+    "static/js/2.2a77f6b8.chunk.js.map": "/ibsf/static/js/2.2a77f6b8.chunk.js.map",
+    "static/js/3.2d66abb5.chunk.js": "/ibsf/static/js/3.2d66abb5.chunk.js",
+    "static/js/3.2d66abb5.chunk.js.map": "/ibsf/static/js/3.2d66abb5.chunk.js.map",
     "index.html": "/ibsf/index.html",
     "static/css/2.782f2948.chunk.css.map": "/ibsf/static/css/2.782f2948.chunk.css.map",
-    "static/css/main.5477b422.chunk.css.map": "/ibsf/static/css/main.5477b422.chunk.css.map",
-    "static/js/2.0fba0925.chunk.js.LICENSE.txt": "/ibsf/static/js/2.0fba0925.chunk.js.LICENSE.txt",
+    "static/css/main.74e4067a.chunk.css.map": "/ibsf/static/css/main.74e4067a.chunk.css.map",
+    "static/js/2.2a77f6b8.chunk.js.LICENSE.txt": "/ibsf/static/js/2.2a77f6b8.chunk.js.LICENSE.txt",
     "static/media/IBSF_LOGO.09379c74.png": "/ibsf/static/media/IBSF_LOGO.09379c74.png",
     "static/media/adidas.87bedba9.png": "/ibsf/static/media/adidas.87bedba9.png",
     "static/media/example2.f92862d1.jpg": "/ibsf/static/media/example2.f92862d1.jpg",
@@ -28,10 +28,10 @@
     "static/media/uber.2a5c056b.png": "/ibsf/static/media/uber.2a5c056b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e474bfe.js",
+    "static/js/runtime-main.406542e5.js",
     "static/css/2.782f2948.chunk.css",
-    "static/js/2.0fba0925.chunk.js",
-    "static/css/main.5477b422.chunk.css",
-    "static/js/main.6c0e06c0.chunk.js"
+    "static/js/2.2a77f6b8.chunk.js",
+    "static/css/main.74e4067a.chunk.css",
+    "static/js/main.98d184f5.chunk.js"
   ]
 }
