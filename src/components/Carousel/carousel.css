@@ -17,6 +17,7 @@
     margin-right: auto;
     
     overflow: hidden;
+    text-align: start;
     z-index: 1;
 
 
@@ -26,7 +27,7 @@
 {
     /* width: 70%; */
     max-width: 65%;
-    padding: 3rem 8rem 4rem 8rem;
+    padding: 4rem 8rem 4rem 8rem;
 }
 
 .carousel_caption h3
@@ -78,9 +79,9 @@
   .mainPage_carousel  .carousel-caption
     {
 
-        max-width:75%;
+        max-width:70%;
         
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
         
     }
 

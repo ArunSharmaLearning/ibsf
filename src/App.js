@@ -1,6 +1,7 @@
 import Main_page from './components/MainPage/Main_page';
 import NewsPage from './components/News/NewsPage';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Redirect } from 'react-router';
 import NewsGallery from './components/NewsGallery/NewsGallery';
 import About from './components/About/About';
 import MemberContinent from './components/MemberCountries/MemberContinent';
@@ -54,7 +55,7 @@ function App() {
       <Route exact path='/download' component={Download}/>
       <Route path='/category/:id' component ={Category}/>
       <Route path='/query/:query' component={Search}/>
-    
+      <Route><Redirect to='/'/> </Route>
       </Switch>
       <Footer/>
       <ScrolltoTop/>

@@ -24,7 +24,7 @@ function ControlledCarousel() {
 
   
     return (
-      <Carousel className="mainPage_carousel" interval={300000} indicators={false}>
+      <Carousel className="mainPage_carousel" interval={4000} indicators={false}>
 
       {
       
@@ -44,8 +44,8 @@ function ControlledCarousel() {
 
         <Carousel.Caption onClick={()=> history.push(`/news/${data.id}/${data.slug}`)} className="carousel_caption">
           <span></span>
-          <h3 style={{margin:0, marginTop:"1rem"}}>{data.title}</h3>
-         
+          <h3 style={{margin:0}}>{data.title}</h3>
+        
         </Carousel.Caption>
       </Carousel.Item>
 
