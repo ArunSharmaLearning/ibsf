@@ -37,11 +37,11 @@ function Footer(props) {
             <h2> <strong className="first_letter_effect">O</strong>ther World Links</h2>
             <hr></hr>
             <ul className="quick_links">
-                <li onClick={() => window.open('https://wst.tv/','_blank')}><a>World Snooker</a></li>
-                <li onClick={() => window.open('http://www.umb.org/','_blank')}><a>Union Mondiale De Billiard</a></li>
+                <li onClick={() => window.open('https://olympics.com/en/','_blank')}><a>Olympic Movement</a></li>
                 <li onClick={() => window.open('https://www.wcbs.sport/','_blank')}><a>World Confederation of Billiards Sports</a></li>
                 <li onClick={() => window.open('https://wpapool.com/','_blank')}><a>World Pool Association</a></li>
-                <li onClick={() => window.open('https://olympics.com/en/','_blank')}><a>Olympic Movement</a></li>
+                <li onClick={() => window.open('https://www.umb-carom.org/','_blank')}><a>Union Mondiale De Billiard</a></li>
+                <li onClick={() => window.open('http://www.wada-ama.org/','_blank')}><a>World Anti-Doping Agency</a></li>
             </ul>
             
             </div>
