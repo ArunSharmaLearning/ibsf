@@ -86,7 +86,7 @@ const Caroufredsel_federation = (props) => {
                 <>
                 {/* <div key={1} data-aos={"fade-up"}  onClick={()=>history.push(`/member_countries/1`)} ><img src={`http://www.ibsf.info/images/banners/african-logo.png`} alt="img" /></div> */}
                 
-                <div key={index} data-aos={"fade-up"}  data-aos-delay={(index)*100} data-aos-anchor-placement="top-center"  onClick={()=>history.push(`/member_countries/${data.id}` )} className="slide_image" ><img src={`https://billiardsports.in${data.logo}`} height='120'style={{objectFit:"contain"}} alt="img" /></div>
+                <div key={index} data-aos={"fade-up"}  data-aos-delay={(index)*100} data-aos-anchor-placement="top-center"  onClick={()=>history.push(`/member_countries/${data.id}/${data.slug}` )} className="slide_image" ><img src={`https://billiardsports.in${data.logo}`} height='120'style={{objectFit:"contain"}} alt="img" /></div>
             
                 </>
             

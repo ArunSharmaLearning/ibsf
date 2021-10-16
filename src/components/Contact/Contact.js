@@ -92,7 +92,7 @@ const Contact = props => {
                     <div dangerouslySetInnerHTML={{__html:data.address}}></div>
                 </div >
 
-                <div className="contact_responsive" style={{display:"flex", flexDirection:'column' }}>
+                <div className="contact_responsive" style={data.bank_details.length===0?{display:'none'} :{display:"flex", flexDirection:'column' }}>
                     <h3 style={{color:"rgb(13, 161, 255)"}}>Bank Details</h3>
                     <p>{data.bank_details}</p>
                 </div>

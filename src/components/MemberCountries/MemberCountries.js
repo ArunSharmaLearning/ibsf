@@ -90,9 +90,31 @@ function MemberCountries() {
         <Header active="aboutus"/>
         
         <div className='ui container' style={{maxWidth:'1130px' , padding:'2rem' , margin:"auto"}}>
+        <h3 style={{textAlign:"center", lineHeight:"3rem" , fontSize:"2.8rem", fontFamily:'Poppins' , margin:'0.5rem'  ,marginBottom:"0rem"}}>{continent.body_name} <br></br><hr style={{ alignContent:"center"  , margin:'1rem auto 1rem auto', width:'20%' }}></hr> </h3>
+    
+    
+        <div style={{display:"flex" , flexWrap:"wrap"   ,width:"100%" , height:"auto" , padding:"2rem" , maxWidth:"1130px"}}>
+
+            {
+                related_country&&related_country.map((data  , index)=>
+                (
+                    <>
+                    <MemberCountry key ={index} data ={data}/>
+                    </>
+                ))
+            
+            }
+            
+        </div>
+            
+
+        <hr style={{border:"0", backgroundImage:"linear-gradient(to right,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.2))" , marginTop:'0.5rem' , marginBottom:"1.5rem"}}></hr>
+        
+        <br></br>
+                
 
         <div className="federation_info" style={{maxWidth:"70rem", padding:"1rem" , margin:"auto"}}>
-            <h3 style={{textAlign:"center", lineHeight:"3rem" , fontSize:"2.8rem", fontFamily:'Poppins' , margin:'0.5rem'  ,marginBottom:"3rem"}}>{continent.name} <br></br><hr style={{ alignContent:"center"  , margin:'1rem auto 4rem auto', width:'70%' }}></hr> </h3>
+            <h3 style={{textAlign:"center", lineHeight:"3rem" , fontSize:"2.8rem", fontFamily:'Poppins' , margin:'0.5rem'  ,marginBottom:"3rem"}}>{continent.name} <br></br><hr style={{ alignContent:"center"  , margin:'1rem auto 4rem auto', width:'50%' }}></hr> </h3>
             
             <div className="frderation_info_contact" style={{display:"flex" , justifyContent:"space-between"}}>
 
@@ -112,7 +134,8 @@ function MemberCountries() {
     
                 </div>
             </div>
-            <hr ></hr>
+            {/* <hr ></hr> */}
+            <br></br>
 
 
             <div style={{display:"flex" , flexWrap:"wrap" }}>
@@ -177,7 +200,7 @@ function MemberCountries() {
                 </div>
 
                 <div style={matches?{width:'80%',paddingLeft:"auto" , margin:"auto"}:{width:'40%' , maxHeight:'200px'}}>
-                    <img style={{marginLeft:"1rem" , marginTop:'0.5rem' , objectFit:"contain" }} height='100%' width="100%" src={`https://billiardsports.in/${continent.logo}`}/>
+                    <img style={{marginLeft:"2rem" , marginTop:'0.5rem' , objectFit:"contain" }}  height='200' width="200" src={`https://billiardsports.in/${continent.logo}`}/>
                 </div>
 
             </div>
@@ -185,23 +208,7 @@ function MemberCountries() {
             
 
         </div>
-        <br></br>
-        <hr style={{border:"0", backgroundImage:"linear-gradient(to right,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0))" , marginTop:'-1rem' , marginBottom:"0"}}></hr>
 
-    
-        <div style={{display:"flex" , flexWrap:"wrap"   ,width:"100%" , height:"auto" , padding:"2rem" , maxWidth:"1130px"}}>
-
-            {
-                related_country&&related_country.map((data  , index)=>
-                (
-                    <>
-                    <MemberCountry key ={index} data ={data}/>
-                    </>
-                ))
-            
-            }
-            
-        </div>
         </div>
         </>
         );

@@ -9,10 +9,12 @@ import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: "30rem",
+    width: "30rem",
+    minHeight:"20rem",
     marginLeft:"1rem",
     marginRight:"1rem", 
-    marginBottom:"2rem"
+    marginBottom:"2rem",
+    boxShadow: "0px 2px 1px -1px rgb(0 0 0 / 10%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 32%)"
   },
   media: {
     height:"17rem",
@@ -29,13 +31,13 @@ export default function ContinentCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={`https://billiardsports.in/${props.logo}`} style={{backgroundSize:"contain"}}
+          image={`https://billiardsports.in/${props.logo}`} style={{backgroundSize:"contain" ,marginTop:"2rem", marginBottom:"1rem"}}
           title="Contemplative Reptile"
         />
         <CardContent>
         
-          <Typography variant="body2"variant="h5" component="h1" style={{marginTop:"0.5rem" , fontSize:"1.7rem"}}>
-           {props.name}
+          <Typography variant="body2"variant="h5" component="h1" style={{marginTop:"0.5rem", color:'black' , fontSize:"1.7rem"}}>
+           {props.body_name}
           </Typography>
         </CardContent>
       </CardActionArea>

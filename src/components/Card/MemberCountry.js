@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: 180,
-    backgroundSize:'contain'
+    backgroundSize:'contain',
   },
   controls: {
     display: 'flex',
