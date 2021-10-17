@@ -136,7 +136,7 @@ function MemberCountries() {
             </div>
             {/* <hr ></hr> */}
             <br></br>
-
+            {/* <br></br> */}
 
             <div style={{display:"flex" , flexWrap:"wrap" }}>
                 <div style={matches?{width:'100%'}:{width:'60%'}}>
@@ -198,9 +198,10 @@ function MemberCountries() {
         </Table>
     </TableContainer>
                 </div>
+                <br></br>
 
                 <div style={matches?{width:'80%',paddingLeft:"auto" , margin:"auto"}:{width:'40%' , maxHeight:'200px'}}>
-                    <img style={{marginLeft:"2rem" , marginTop:'0.5rem' , objectFit:"contain" }}  height='200' width="200" src={`https://billiardsports.in/${continent.logo}`}/>
+                    <img style={!matches?{float:"right"  }:{marginTop:'1rem' , marginLeft:"2rem"}}  height='200' width="200" src={`https://billiardsports.in/${continent.logo}`}/>
                 </div>
 
             </div>
