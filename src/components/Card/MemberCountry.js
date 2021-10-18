@@ -53,7 +53,7 @@ export default function MemberCountry(props){
 
 <CardMedia
         className={classes.cover}
-        image={`https://billiardsports.in/${props.logo}`}
+        image={`https://ibsf.info/${props.logo}`}
         title={props.logo}
       />
       <div className={classes.details}>

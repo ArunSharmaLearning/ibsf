@@ -104,7 +104,7 @@ const EventPage = (props) => {
         useEffect(() => {
             setdata([])
             setloading(true)
-            axios.get(`https://billiardsports.in/api/event/year/?year=${state}`)
+            axios.get(`https://ibsf.info/api/event/year/?year=${state}`)
             .then((res)=> 
             {setdata(res.data.data)
             setloading(false)})
@@ -195,7 +195,7 @@ const EventPage = (props) => {
     :<>
     {
       loading?<div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <p><CircularProgress/></p> </div>:
-      <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h4>Nothing Found...</h4> </div>
+      <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h3>Nothing Found...</h3> </div>
     }
     </>
           }

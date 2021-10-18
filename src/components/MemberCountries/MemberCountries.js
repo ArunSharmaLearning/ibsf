@@ -68,11 +68,11 @@ function MemberCountries() {
 
     useEffect(() =>
     {
-        axios.get(`https://billiardsports.in/api/region/?id=${id}`)
+        axios.get(`https://ibsf.info/api/region/?id=${id}`)
         .then((res)=>setContinent(res.data.data))
         .catch((e)=>console.log(e));
 
-        axios.get(`https://billiardsports.in/api/member-countries/?rid=${id}`)
+        axios.get(`https://ibsf.info/api/member-countries/?rid=${id}`)
         .then((res)=>setCountry(res.data.data))
         .catch((e)=>console.log(e))
 
@@ -201,7 +201,7 @@ function MemberCountries() {
                 <br></br>
 
                 <div style={matches?{width:'80%',paddingLeft:"auto" , margin:"auto"}:{width:'40%' , maxHeight:'200px'}}>
-                    <img style={!matches?{float:"right"  }:{marginTop:'1rem' , marginLeft:"2rem"}}  height='200' width="200" src={`https://billiardsports.in/${continent.logo}`}/>
+                    <img style={!matches?{float:"right"  }:{marginTop:'1rem' , marginLeft:"2rem"}}  height='200' width="200" src={`https://ibsf.info/${continent.logo}`}/>
                 </div>
 
             </div>

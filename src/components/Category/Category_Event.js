@@ -37,7 +37,7 @@ const Category_Event = props => {
   
         }
         setloading(true)
-      axios.get(`https://billiardsports.in/api/category/?num=${page}&category=${id}&type=event`).
+      axios.get(`https://ibsf.info/api/category/?num=${page}&category=${id}&type=event`).
       then((res)=>setdata((prev)=> {
         if(res.data.data.event.length===0)
         setBottom(true)

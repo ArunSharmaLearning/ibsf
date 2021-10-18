@@ -14,7 +14,7 @@ const NewsbyTag = props => {
 
     useEffect(()=>
     {
-    axios.get(`https://billiardsports.in/api/news/tags/?tag=${tagname}`).
+    axios.get(`https://ibsf.info/api/news/tags/?tag=${tagname}`).
     then((res)=>
     {
         setloading(false);

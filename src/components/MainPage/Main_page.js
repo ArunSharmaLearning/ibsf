@@ -31,7 +31,7 @@ const Main_page = () => {
 
   useEffect(()=>
   {
-  axios.get("https://billiardsports.in/api/news/latest/")
+  axios.get("https://ibsf.info/api/news/latest/")
           .then((response) => {
             setlatestnews(response.data.data)
             setloading((prev)=>(
@@ -41,11 +41,11 @@ const Main_page = () => {
 
           })
 
-          axios.get("https://billiardsports.in/api/sponsers/")
+          axios.get("https://ibsf.info/api/sponsers/")
         .then((response) => setSponsor(response.data.data))
 
         
-        axios.get("https://billiardsports.in/api/event/front/")
+        axios.get("https://ibsf.info/api/event/front/")
         .then((response)=>{
           seteventFront(response.data.data)
           setloading((prev)=>(

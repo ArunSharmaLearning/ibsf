@@ -10,7 +10,7 @@ function ExecutiveMember(props) {
 
     useEffect(()=>
     {
-        axios.get('https://billiardsports.in/api/executives/')
+        axios.get('https://ibsf.info/api/executives/')
         .then((res)=>
         {setData(res.data.data)
             setloading(false)
@@ -52,7 +52,7 @@ function ExecutiveMember(props) {
         <>
         {
             loading?<div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <p><CircularProgress/></p> </div>:
-            <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h4>Nothing Found...</h4> </div>
+            <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h3>Nothing Found...</h3> </div>
         }
         </>
         }

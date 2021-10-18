@@ -12,7 +12,7 @@ function About() {
 
     useEffect(()=>
   {
-  axios.get("https://billiardsports.in/api/about/")
+  axios.get("https://ibsf.info/api/about/")
           .then((response) => {
             setData(response.data.data.content_about)
             setloading(false)
@@ -53,7 +53,7 @@ function About() {
             :<>
             {
                 loading?<div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <p><CircularProgress/></p> </div>:
-                <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h4>Nothing Found...</h4> </div>
+                <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h3>Nothing Found...</h3> </div>
             }</>
             }
         </div>

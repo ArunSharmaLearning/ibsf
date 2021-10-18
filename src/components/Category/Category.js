@@ -93,7 +93,7 @@ const Category = props => {
   
         }
         setloading_news(true)
-      axios.get(`https://billiardsports.in/api/category/?num=${page_news}&category=${id}&type=news`).
+      axios.get(`https://ibsf.info/api/category/?num=${page_news}&category=${id}&type=news`).
       then((res)=>setdata_news((prev)=> {
         if(res.data.data.news.length===0)
         setBottom_news(true)
@@ -115,7 +115,7 @@ const Category = props => {
   
         }
         setloading_event(true)
-      axios.get(`https://billiardsports.in/api/category/?num=${page_event}&category=${id}&type=event`).
+      axios.get(`https://ibsf.info/api/category/?num=${page_event}&category=${id}&type=event`).
       then((res)=>setdata_event((prev)=> {
         if(res.data.data.event.length===0)
         setBottom_event(true)

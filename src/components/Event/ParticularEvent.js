@@ -30,12 +30,12 @@ const ParticularEvent = (props) => {
 
     useEffect(()=>
     {
-        axios.get(`https://billiardsports.in/api/event/?id=${id}`)
+        axios.get(`https://ibsf.info/api/event/?id=${id}`)
         .then((res)=> setdata(res.data.data))
         .catch((e)=> console.log(e))
 
         
-        axios.get("https://billiardsports.in/api/sponsers/")
+        axios.get("https://ibsf.info/api/sponsers/")
         .then((response) => setSponsor(response.data.data))
 
 

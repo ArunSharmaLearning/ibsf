@@ -12,7 +12,7 @@ function MemberContinent() {
 
     useEffect(() =>
     {
-        axios.get('https://billiardsports.in/api/all-regions/')
+        axios.get('https://ibsf.info/api/all-regions/')
         .then((res)=>
         {
             setCountry(res.data.data)
@@ -53,7 +53,7 @@ function MemberContinent() {
         <>
         {
         loading?<div id="loader" style={{width:"100%" , marginTop:"5rem" ,  textAlign:"center" }}> <p><CircularProgress/></p> </div>:
-        <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h4>Nothing Found...</h4> </div>
+        <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <h3>Nothing Found...</h3> </div>
         }
         </>
         }

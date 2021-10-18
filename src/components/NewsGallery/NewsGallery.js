@@ -67,7 +67,7 @@ option.value = i;
 
       }
       setloading(true)
-    axios.get(`https://billiardsports.in/api/news/${state}/?num=${page}`).
+    axios.get(`https://ibsf.info/api/news/${state}/?num=${page}`).
     then((res)=>setdata((prev)=> {
       if(res.data.data.length===0)
       setBottom(true)
@@ -82,7 +82,7 @@ option.value = i;
       setpage(1)
       setBottom(false)
       setloading(true)
-    axios.get(`https://billiardsports.in/api/news/year/?year=${state}`).
+    axios.get(`https://ibsf.info/api/news/year/?year=${state}`).
     then((res)=>
     {setdata(res.data.data)
       setloading(false)

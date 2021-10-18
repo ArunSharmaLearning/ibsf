@@ -18,7 +18,7 @@ const Search = props => {
     {
         setloading(true)
         setSearchdata([])
-        axios.get(`https://billiardsports.in/api/search/?query=${query}`)
+        axios.get(`https://ibsf.info/api/search/?query=${query}`)
         .then((res)=>
         {
             setSearchdata(res.data.data)
