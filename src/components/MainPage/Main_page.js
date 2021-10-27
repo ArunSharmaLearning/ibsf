@@ -54,10 +54,6 @@ const Main_page = () => {
             }))
           })
 
-
-        
-      
-
   } , [])
   
   if(loading.loading1!=true && loading.loading2!=true)
@@ -129,7 +125,7 @@ const Main_page = () => {
       </div>
       
     
-    <div style={{background:'#333'}}>
+    <div style={{background:'rgb(33 33 33)'}}>
 
 
     <div className="middle_widgets">
@@ -157,7 +153,7 @@ const Main_page = () => {
 
       </div>
 
-      <div className="news_section" style={{display:"flex"   ,flexDirection:"row", justifyContent:"center" ,backgroundColor: "#666" ,paddingTop:"2rem" }}>
+      <div className="news_section" style={{display:"flex"   ,flexDirection:"row", justifyContent:"center" ,backgroundColor: "rgb(51 51 51)" ,paddingTop:"2rem" }}>
   
     {latestnews&&latestnews.slice(0 , 4).map((e , index)=>
     (
@@ -169,14 +165,13 @@ const Main_page = () => {
 
 
   
-    <div style={{background:"#999"}}>
+    <div style={{background:"rgb(65 65 65)"}}>
     <Caroufredsel_wrapper data = {sponsor}/>
     </div>
     
     <br></br>
 
     <Caroufredsel_federation/>
-    {/* <Footer/> */}
 
       </>
   );

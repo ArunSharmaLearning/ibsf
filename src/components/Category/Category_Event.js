@@ -67,11 +67,6 @@ const Category_Event = props => {
 
                 } 
 
-        {/* {
-          data.length==0 && loading==false && <div style={{width:'100%', textAlign:"center"}}><h3 >Nothing Found...</h3></div>
-        }
-{(loading && bottom!=true) && <div id="loader" style={{width:"100%" ,  textAlign:"center" }}> <CircularProgress/> </div>} */}
-            
                 
             </Grid>
             

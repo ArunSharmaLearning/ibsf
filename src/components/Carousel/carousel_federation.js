@@ -25,7 +25,6 @@ const Caroufredsel_federation = (props) => {
     {
         const width = window.innerWidth;
         AOS.init({
-            // initialise with other settings
             duration : 900,
             once:true,
         });
@@ -78,16 +77,12 @@ const Caroufredsel_federation = (props) => {
 
     return (
         <div className="carouselfederation_container">
-            {/* {isTabletOrMobile && setslidesToShow(1)} */}
 
 <Slider  {...setting}>
-    { 
+    {
     federation.map((data, index)=>(
                 <>
-                {/* <div key={1} data-aos={"fade-up"}  onClick={()=>history.push(`/member_countries/1`)} ><img src={`http://www.ibsf.info/images/banners/african-logo.png`} alt="img" /></div> */}
-                
-                <div key={index} data-aos={"fade-up"}  data-aos-delay={(index)*100} data-aos-anchor-placement="top-center"  onClick={()=>history.push(`/member_countries/${data.id}/${data.slug}` )} className="slide_image" ><img src={`https://ibsf.info${data.logo}`} height='120'style={{objectFit:"contain"}} alt="img" /></div>
-            
+                <div key={index} data-aos={"fade-up"}  data-aos-delay={(index)*100} data-aos-anchor-placement="top-center"  onClick={()=>history.push(`/member_countries/${data.id}/${data.slug}` )} className="slide_image" ><img src={`https://ibsf.info${data.logo}`} height='120px'style={{objectFit:"contain"}} alt="img" /></div>
                 </>
             
     ))
@@ -95,19 +90,6 @@ const Caroufredsel_federation = (props) => {
 
     </Slider>
     
-
-        {/* <Slider {...settings} className="customer-logos slider">
-            
-
-        <div className="slide"><img src={adidas} alt="img" /></div>
-        <div className="slide"><img src={facebook} alt="img" /></div>
-        <div className="slide"><img src={google} alt="img" /></div>
-        <div className="slide"><img src={instagram} alt="img" /></div>
-        <div className="slide"><img src={nike} alt="img" /></div>
-        <div className="slide"><img src={twitter} alt="img" /></div>
-        <div className="slide"><img src={uber} alt="img" /></div>
-
-        </Slider> */}
 
 
         </div>
