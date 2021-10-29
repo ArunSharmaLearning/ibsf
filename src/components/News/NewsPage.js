@@ -137,7 +137,7 @@ const NewsPage=({match})=> {
 
                 <div className="author">
 
-                <Avatar style={{width: "6rem",height: "6rem"}} alt="Remy Sharp" src={`http://billiardsports.in/${newsData.writer_data.profile_pic}`} />
+                <Avatar style={{width: "6rem",height: "6rem"}} alt="Remy Sharp" src={`https://ibsf.info/${newsData.writer_data.profile_pic}`} />
 
                     <h5>{newsData.writer_data.name}, {newsData.writer_data.position}</h5>
                 </div>

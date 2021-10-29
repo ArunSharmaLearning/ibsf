@@ -125,7 +125,7 @@ const Main_page = () => {
       </div>
       
     
-    <div style={{background:'rgb(33 33 33)'}}>
+    <div style={{background:'rgb(65 65 65)'}}>
 
 
     <div className="middle_widgets">
@@ -153,7 +153,7 @@ const Main_page = () => {
 
       </div>
 
-      <div className="news_section" style={{display:"flex"   ,flexDirection:"row", justifyContent:"center" ,backgroundColor: "rgb(51 51 51)" ,paddingTop:"2rem" }}>
+      <div className="news_section" style={{display:"flex"   ,flexDirection:"row", justifyContent:"center" ,backgroundColor: "rgb(95 95 95)" ,paddingTop:"2rem" }}>
   
     {latestnews&&latestnews.slice(0 , 4).map((e , index)=>
     (
@@ -165,7 +165,7 @@ const Main_page = () => {
 
 
   
-    <div style={{background:"rgb(65 65 65)"}}>
+    <div style={{background:"rgb(130 130 130)"}}>
     <Caroufredsel_wrapper data = {sponsor}/>
     </div>
     

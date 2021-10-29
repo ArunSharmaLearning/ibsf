@@ -16,7 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Caroufredsel_federation = (props) => {
 
 
-    const [slidesToShow , setslidesToShow] = useState(5);
+    const [slidesToShow , setslidesToShow] = useState();
     const [federation , setfederation] = useState([])
     const history =useHistory()
 
@@ -37,6 +37,7 @@ const Caroufredsel_federation = (props) => {
         .then((res)=>
         {
             setfederation(res.data.data)
+            setslidesToShow(federation.length)
         })
     },[])
 
@@ -48,7 +49,7 @@ const Caroufredsel_federation = (props) => {
 
     const handleMediaQueryChange1 = (matches) => {
         if(matches)
-        setslidesToShow(5);
+        setslidesToShow(federation.length);
     }
 
     
