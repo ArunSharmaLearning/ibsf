@@ -60,7 +60,7 @@ const Caroufredsel_wrapper = (props) => {
 
     return (
         <div className="carouselwrapper_container">
-            {/* {isTabletOrMobile && setslidesToShow(1)} */}
+            
 
 <Slider style={{  height:"auto"  , overflow:"hidden"}} {...setting}>
 
@@ -69,7 +69,7 @@ const Caroufredsel_wrapper = (props) => {
             props.data&&props.data.map((data , index)=>
             (   
 
-                <div key={index} onClick={()=>window.open(data.url , '_blank')} className="slide_image" ><img src={`https://ibsf.info/${data.image}`} width="auto" height="100%" alt="img" /></div>
+                <div key={index} onClick={()=>window.open(data.url , '_blank')} className="slide_image" ><img src={`https://ibsf.info${data.image}`} width="auto" height="100%" alt="img" /></div>
 
             ))
 

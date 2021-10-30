@@ -60,7 +60,7 @@ const Particular_rules = (props) => {
         
 
         <section style={{width:"96%" , margin:"auto"}}>
-        <img src ={`https://ibsf.info/${Data.image}`} style={{ width:"100%", maxHeight:"100%"}}/>
+        <img src ={`https://ibsf.info${Data.image}`} style={{ width:"100%", maxHeight:"100%"}}/>
         
         <br></br>
         <br></br>

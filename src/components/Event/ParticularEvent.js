@@ -155,7 +155,6 @@ const ParticularEvent = (props) => {
 
             <section className="event_content">
                 <div className="event_content1" dangerouslySetInnerHTML={{__html:data.content1}}>
-
                 </div>
                 
                 <div className="event_content2" dangerouslySetInnerHTML={{__html:data.content2}}>

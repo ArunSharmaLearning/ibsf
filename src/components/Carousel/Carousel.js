@@ -36,7 +36,7 @@ function ControlledCarousel() {
         <img
           loading='lazy'
           className="d-block w-100"
-          src={`https://ibsf.info/${data.image}`}
+          src={`https://ibsf.info${data.image}`}
           style = {{ height:"100%" , filter:"brightness(90%)"  }}
           alt="Pre Slide"
         />

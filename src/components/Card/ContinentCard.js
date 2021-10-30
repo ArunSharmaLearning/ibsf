@@ -37,15 +37,11 @@ export default function ContinentCard(props) {
         <CardContent>
         
           <Typography variant="body2"variant="h5" component="h1" style={{marginTop:"0.5rem", color:'black' , fontSize:"1.7rem"}}>
-           {props.body_name}
+          {props.body_name}
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <CardActions style={{float:"right"}}>
-        <Button size="small" color="primary" style={{fontSize:"1.5rem" , margin:0}}>
-          Go
-        </Button>
-      </CardActions> */}
+  
     </Card>
   );
 }

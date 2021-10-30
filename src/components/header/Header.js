@@ -76,7 +76,7 @@ function Header({active}) {
     <div className="topnav" id="myTopnav">
       <div className="ui container" style={{backgroundColor: ""}}>
         <a className="" onClick={()=>history.push("/")} style={active == "home" ? { color: "#0da1ff"}:{}} >Home </a>
-        {/* <a className="" onClick={()=>history.push("/")}>Calendar</a> */}
+        
 
         <div className="dropdown">
           <button className="dropbtn" style={active == "aboutus" ? { color: "#0da1ff"}:{}}>
@@ -88,8 +88,7 @@ function Header({active}) {
             <a className="" onClick={()=>history.push("/executive_member")}>Executives</a>
             <a className=""  onClick={()=>history.push("/member_countries")}>Members</a>
             <a className="" onClick={()=>history.push("/champion")}>Past Champions</a>
-            {/* <a className="" onClick={()=>history.push("/download")}>Downloads</a>
-            <a className="" onClick={()=>history.push("/rules")}>Rules of Snooker</a> */}
+          
           </div>
         </div>
 
@@ -123,7 +122,7 @@ function Header({active}) {
       
         onKeyPress={(ev) => {
         if (ev.key === 'Enter') {
-          // Do code here
+      
 
           ev.preventDefault();
           handleSearch(ev);

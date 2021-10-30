@@ -119,8 +119,8 @@ function MemberCountries() {
             <div className="frderation_info_contact" style={{display:"flex" , justifyContent:"space-between"}}>
 
                 <div className="contact" style={{display:"flex" , flexDirection:"column"}}>
-                    <p style={{fontWeight:"900" , fontSize:'1.5rem'}} >{continent.contact.toUpperCase()} {continent.mobile && <CallIcon onClick={()=>window.location.href=`tel:${continent.mobile}`} style={{fontSize:'2rem',cursor:'pointer' ,  color:"green"}}/>}
-                    <span style={{cursor:"pointer"}}></span> <span style={{color:"rgba(255 , 0 , 0 , 0.7)"}} onClick={()=>window.location.href=`mailto: ${continent.email_id}`}>  <MailOutlineIcon style={{cursor :"pointer", fontSize:'2.2rem'}}/></span>
+                    <p style={{fontWeight:"900" , fontSize:'1.5rem'}} >{continent.contact && continent.contact.toUpperCase()} {continent.mobile && <CallIcon onClick={()=>window.location.href=`tel:${continent.mobile}`} style={{fontSize:'2rem',cursor:'pointer' ,  color:"green"}}/>}
+                    {continent.email_id &&  <span style={{color:"rgba(255 , 0 , 0 , 0.7)"}} onClick={()=>window.location.href=`mailto: ${continent.email_id}`}>  <MailOutlineIcon style={{cursor :"pointer", fontSize:'2.2rem'}}/></span>}
                     </p>
                 </div>
 

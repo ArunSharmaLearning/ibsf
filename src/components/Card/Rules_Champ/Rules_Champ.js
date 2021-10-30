@@ -9,7 +9,7 @@ function Rules_Champ(props) {
     return (
         <div onClick={()=>history.push(`${path}/${props.id}/${props.slug}`)} className="rules_champ_card_body" style={{  overflow:"hidden"}}>
 
-            <div className = "rules_champ_card_image" style={{backgroundImage:`url(http://billiardsports.in/${props.image})`, backgroundSize:"cover" , backgroundRepeat:"no-repeat"}}>
+            <div className = "rules_champ_card_image" style={{backgroundImage:`url(http://billiardsports.in${props.image})`, backgroundSize:"cover" , backgroundRepeat:"no-repeat"}}>
 
             </div>
     
