@@ -59,9 +59,9 @@
     padding-right: 3rem;
     
 }
-.particulat_event .event_content1
+.particulat_event .event_content1 , .event_content2
 {
-    min-width: 50%;
+    width: 50%;
 }
 
 }
